@@ -1,4 +1,4 @@
-# Akshay Dhiman ([theakshaydhiman.github.io](https://theakshaydhiman.github.io/))
+# Akshay Dhiman
 
 ## My Main Website
 
