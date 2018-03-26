@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#body {
+    background-color: #B3E5FC;
+}
+
+h1 {
+    color: #424242;
+}
+
+p {
+    color: #757575;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.button {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #00E676;
+    color: white;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.1);
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #00C853;
+}
+
+.lmodal-overlay {
+    z-index: 999;
+    background-color: rgba(0,0,0,0.7);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0;
+    display: none;
+}
+
+.lmodal-content {
+    z-index: 1000;
+    max-height: 70%;
+    width: 55%;
+    margin: auto;
+    overflow-y: auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    border-radius: 2px;
+    display: none;
+}
+
+.top-right {
+    float: right;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 2px 15px 5px 15px;
+    color: #424242;
+}
+
+.lmodal-opened {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    z-index: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
