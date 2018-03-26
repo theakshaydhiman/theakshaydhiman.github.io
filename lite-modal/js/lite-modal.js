@@ -1,3 +1,9 @@
+/*
+*   Lite Modal v0.1.1
+*   https://github.com/theakshaydhiman/lite-modal
+*   (c) 2018 Akshay Dhiman. MIT License.
+*/
+
 var lModalOverlay = document.querySelector('.lmodal-overlay');
 var lModalTrigger = document.querySelector('.lmodal-trigger');
 var lModalContent = document.querySelector('.lmodal-content');
@@ -30,7 +36,7 @@ function fadeOut(el){
     el.style.opacity = 1;
 
     (function fade() {
-        if ((el.style.opacity -= .2) < 0) {
+        if ((el.style.opacity -= 0.2) < 0) {
             el.style.display = "none";
         } else {
             requestAnimationFrame(fade);
@@ -45,7 +51,8 @@ function fadeIn(el, display){
 
     (function fade() {
         var val = parseFloat(el.style.opacity);
-        if (!( (val += .15) > 1 ) ) {
+        val += 0.2;
+        if ( val == null || val <= 1 ) {
             el.style.opacity = val;
             requestAnimationFrame(fade);
         }
