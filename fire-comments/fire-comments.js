@@ -1,5 +1,5 @@
 /* 
-* Fire Comments JS v0.2.0 (https://github.com/theakshaydhiman/Fire-Comments-JS)
+* Fire Comments JS v0.2.1 (https://github.com/theakshaydhiman/Fire-Comments-JS)
 * Copyright 2018 Akshay Dhiman
 * MIT License (https://github.com/theakshaydhiman/Fire-Comments-JS/blob/master/LICENSE)
 */
@@ -16,16 +16,16 @@
     .replace(/[^a-zA-Z0-9-_]+/g, '');
 
   // Get Element ID
-  const id = gId => document.getElementById(gId);
+  let id = gId => document.getElementById(gId);
 
   // Get Value of an Element
-  const getVal = id => document.getElementById(id).value;
+  let getVal = id => document.getElementById(id).value;
 
   // References
   const commentsRef = firebase.database().ref('comments').child(slugify(window.location.pathname));
 
   // Fuction to submit a new comment
-  const saveComment = (name, md5Email, message, where) => {
+  let saveComment = (name, md5Email, message, where) => {
     where.push().set({
       name: name,
       message: message,
