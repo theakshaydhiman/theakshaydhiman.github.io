@@ -1,5 +1,5 @@
 /* 
-* Fire Comments JS v0.2.1 (https://github.com/theakshaydhiman/Fire-Comments-JS)
+* Fire Comments JS v0.2.2 (https://github.com/theakshaydhiman/Fire-Comments-JS)
 * Copyright 2018 Akshay Dhiman
 * MIT License (https://github.com/theakshaydhiman/Fire-Comments-JS/blob/master/LICENSE)
 */
@@ -127,7 +127,7 @@
     c.message = c.message.replace('<a ', '<a target="_blank" rel="nofollow noopener" ');
 
     let html = `<div class="comment-item">
-    <div class="left"><img class="author-grav" src="https://www.gravatar.com/avatar/${c.md5Email}?s=80&d=retro/"></div>
+    <div class="left"><img class="author-grav" src="https://www.gravatar.com/avatar/${c.md5Email}?s=80&d=retro"></div>
     <h3>${xssFilters.inHTMLData(c.name)}</h3>
     <small>${timeago().format(c.postedAt)}</small>
     <p>${xssFilters.inHTMLComment(c.message)}</p>
