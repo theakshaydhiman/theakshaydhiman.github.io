@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fire Comments JS</title>
+    <title>Fire Comments JS - A commenting system for static websites.</title>
+    <meta name="description" content="A commenting system for static websites using Firebase Realtime Database.">  
+	<meta name="author" content="Akshay Dhiman">
+    <link rel="icon" href="img/favicon-ad.png" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     
     <h1>Fire Comments JS <br><small>Commenting system for static websites using Firebase Realtime Database</small></h1>
     <a href="https://github.com/theakshaydhiman/Fire-Comments-JS/fork" target="_blank" rel="noopener">Fork me on GitHub.</a>
+    <a href="https://github.com/theakshaydhiman/Fire-Comments-JS/" target="_blank" rel="noopener">Read the docs.</a>
     <br><br><hr><br>
 
     <div class="comments">
@@ -30,7 +34,7 @@
             </form>
 
             <form id="reply" style="display:none;">
-                <h3 id="reply-form-title"></h3>
+                <h3>Reply</h3>
                 <div id="cancel-reply"><a href="#!" class="cancel-reply-link">Cancel Reply</a></div>
                 <textarea id="message" type="text" placeholder="Comment (HTML supported)" required></textarea>
                 <input id="name" type="text" placeholder="Name" required>
@@ -41,7 +45,7 @@
     </div>
     <br>
     <hr>
-    <small>&copy; 2018 Akshay Dhiman | MIT License</small>
+    <small>&copy; 2018 <a href="https://akshaydhiman.com" target="_blank" rel="noopener">Akshay Dhiman</a> | MIT License</small>
 
     <!-- Dependencies -->
     <script src="js/md5.js"></script>
@@ -61,7 +65,7 @@
     firebase.initializeApp(config);
     </script>
 
-    <!-- FireComments -->
+    <!-- Fire Comments JS -->
     <script src="fire-comments.js"></script>
 </body>
 </html>
