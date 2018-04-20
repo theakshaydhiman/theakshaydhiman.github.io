@@ -95,7 +95,7 @@ a:hover, a:focus {
 }
 
 .lmodal-opened {
-    -webkit-filter: blur(3px);
+    -webkit-filter: blur(50px);
     filter: blur(3px);
     z-index: 0;
     position: fixed;
